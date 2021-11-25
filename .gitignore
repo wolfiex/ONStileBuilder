@@ -1,4 +1,4 @@
-*.mbfiles
+*/*.mbfiles
 *.geojson
 
 # Byte-compiled / optimized / DLL files
