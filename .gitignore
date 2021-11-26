@@ -1,6 +1,6 @@
-*/*.mbfiles
+*.mbtiles
 *.geojson
-
+tiles/*.mbtiles
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
