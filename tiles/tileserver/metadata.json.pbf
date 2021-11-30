@@ -10,6 +10,6 @@
     "attribution": "ONS",
     "format": "pbf",
     "generator": "tile-join v1.36.0",
-    "generator_options": "tile-join -o ./tiles/merged.mbtiles -f ./tiles/OA.mbtiles ./tiles/msoa.mbtiles ./tiles/lsoa.mbtiles '--attribution=ONS'",
+    "generator_options": "tile-join -o ./tiles/merged.mbtiles -f ./tiles/OA.mbtiles ./tiles/msoa.mbtiles '--attribution=ONS'",
     "json": "{\"vector_layers\": [ ],\"tilestats\": {\"layerCount\": 0,\"layers\": []}}"
 }
