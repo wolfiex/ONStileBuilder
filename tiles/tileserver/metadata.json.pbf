@@ -1,15 +1,15 @@
 {
-    "name": "",
-    "description": "",
+    "name": "tiles/centroids11OA.mbtiles + tiles/outputarea11OA.mbtiles + tiles/centroids11msoa.mbtiles + tiles/outputarea11msoa.mbtiles",
+    "description": "tiles/outputarea11msoa.mbtiles",
     "version": "2",
-    "minzoom": "2147483647",
-    "maxzoom": "-2147483648",
-    "center": "0.000000,0.000000,-2147483648",
-    "bounds": "2147483647.000000,2147483647.000000,-2147483648.000000,-2147483648.000000",
+    "minzoom": "1",
+    "maxzoom": "8",
+    "center": "-0.703125,51.177236,8",
+    "bounds": "-180.000000,48.922499,180.000000,85.051129",
     "type": "overlay",
     "attribution": "ONS",
     "format": "pbf",
     "generator": "tile-join v1.36.0",
-    "generator_options": "tile-join -o ./tiles/merged.mbtiles -f ./tiles/OA.mbtiles ./tiles/msoa.mbtiles '--attribution=ONS'",
-    "json": "{\"vector_layers\": [ ],\"tilestats\": {\"layerCount\": 0,\"layers\": []}}"
+    "generator_options": "tippecanoe -Q -Z1 -z5 -f '--gamma=0' --no-feature-limit --no-tile-size-limit -r1 -o tiles/centroids11OA.mbtiles -L centroids:./tmp/centroids11OA.geojson; tippecanoe -Q -Z1 -z5 -f -ab -o tiles/outputarea11OA.mbtiles --drop-densest-as-needed --generate-id -L areas:./tmp/11OA.geojson; tile-join -o ./tiles/OA.mbtiles -f ./tiles/centroids11OA.mbtiles ./tiles/outputarea11OA.mbtiles; tippecanoe -Q -Z6 -z8 -f '--gamma=0' --no-feature-limit --no-tile-size-limit -r1 -o tiles/centroids11msoa.mbtiles -L centroids:./tmp/centroids11msoa.geojson; tippecanoe -Q -Z6 -z8 -f -ab -o tiles/outputarea11msoa.mbtiles --drop-densest-as-needed --generate-id -L areas:./tmp/11msoa.geojson; tile-join -o ./tiles/msoa.mbtiles -f ./tiles/centroids11msoa.mbtiles ./tiles/outputarea11msoa.mbtiles; tile-join -o ./tiles/merged.mbtiles -f ./tiles/OA.mbtiles ./tiles/msoa.mbtiles '--attribution=ONS'",
+    "json": "{\"vector_layers\": [ { \"id\": \"areas\", \"description\": \"\", \"minzoom\": 1, \"maxzoom\": 8, \"fields\": {\"id\": \"String\"} } ],\"tilestats\": {\"layerCount\": 1,\"layers\": [{\"layer\": \"areas\",\"count\": 129047,\"geometry\": \"Polygon\",\"attributeCount\": 1,\"attributes\": [{\"attribute\": \"id\",\"count\": 1000,\"type\": \"string\",\"values\": [\"E00000024\",\"E00000026\",\"E00000035\",\"E00000056\",\"E00000059\",\"E00000062\",\"E00000089\",\"E00000100\",\"E00000104\",\"E00000111\",\"E00000116\",\"E00000145\",\"E00000147\",\"E00000156\",\"E00000161\",\"E00000166\",\"E00000180\",\"E00000181\",\"E00000188\",\"E00000191\",\"E00000197\",\"E00000243\",\"E00000244\",\"E00000253\",\"E00000272\",\"E00000284\",\"E00000298\",\"E00000305\",\"E00000308\",\"E00000311\",\"E00000325\",\"E00000340\",\"E00000357\",\"E00000379\",\"E00000382\",\"E00000386\",\"E00000398\",\"E00000430\",\"E00000434\",\"E00000461\",\"E00000463\",\"E00000464\",\"E00000469\",\"E00000472\",\"E00000474\",\"E00000478\",\"E00000488\",\"E00000508\",\"E00000521\",\"E00000532\",\"E00000534\",\"E00000546\",\"E00000552\",\"E00000560\",\"E00000570\",\"E00000595\",\"E00000609\",\"E00000653\",\"E00000670\",\"E00000672\",\"E00000698\",\"E00000700\",\"E00000716\",\"E00000730\",\"E00000756\",\"E00000760\",\"E00000769\",\"E00000778\",\"E00000794\",\"E00000805\",\"E00000808\",\"E00000823\",\"E00000830\",\"E00000849\",\"E00000850\",\"E00000853\",\"E00000857\",\"E00000858\",\"E00000864\",\"E00000865\",\"E00000876\",\"E00000878\",\"E00000922\",\"E00000926\",\"E00000927\",\"E00000930\",\"E00000957\",\"E00000960\",\"E00000964\",\"E00000975\",\"E00000982\",\"E00000983\",\"E00001003\",\"E00001004\",\"E00001008\",\"E00001012\",\"E00001014\",\"E00001015\",\"E00001018\",\"E00001026\"]}]}]}}"
 }
