@@ -1,5 +1,5 @@
 *.mbtiles
-*.geojson
+tmp/*.geojson
 tiles/*.mbtiles
 # Byte-compiled / optimized / DLL files
 __pycache__/
